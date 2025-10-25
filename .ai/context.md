@@ -1,68 +1,52 @@
 # Additional Context for AI Assistants
 
-## Architecture Documentation
+## About This File
+This file can be used to provide domain-specific context to AI assistants. Customize it based on your work and reference materials.
 
-All architecture documentation is maintained in `docs/architecture/`:
+## Example: Architecture Documentation Structure
 
-### Core Architecture
-- **Project Overview**: @docs/architecture/edp-project-overview.md - Executive summary, project background, strategic context
-- **Platform Architecture**: @docs/architecture/edp_platform_architecture.md - Technical platform details and naming conventions
-- **Layer Architecture**: @docs/architecture/edp-layer-architecture-detailed.md - Medallion architecture layers (Raw, Integration, Curation, Consumption)
-- **Project Roadmap**: @docs/architecture/project-roadmap.md - Project work breakdown and timeline
+If you maintain architecture documentation, you might organize it like:
 
-### Implementation Patterns
-Located in `docs/architecture/patterns/`:
-- **Raw Vault Patterns**: Raw Vault implementation for Data Vault 2.0 integration layer
-- **Business Vault Patterns**: Business logic and calculations for curation layer
-- **Multi-Tenancy Architecture**: Tenant isolation and security patterns
+```
+docs/architecture/
+├── project-overview.md          # Executive summary and context
+├── platform-architecture.md     # Technical platform details
+├── patterns/                    # Implementation patterns
+│   ├── design-pattern-1.md
+│   └── design-pattern-2.md
+└── standards/
+    └── documentation-standards.md
+```
 
-### Business Rules
-Domain-specific business rules in `docs/architecture/rules/`:
-- **Membership**: Member eligibility, enrollment, coverage rules
-- **Provider**: Network management, credentialing, contracts
-- **Claims**: Claims processing, adjudication, payment rules
-- **Domain Context**: Business domain and bounded context definitions
+## Example: Domain Knowledge Base
 
-### Standards
-Technical and documentation standards in `docs/architecture/standards/`:
-- **Diagramming Standards**: C4/DDD unified architecture diagramming guide
+For technical domains, you might maintain:
 
-## Engineering Knowledge Base
-
-Technical implementation guides in `docs/engineering-knowledge-base/`:
-- **Data Vault 2.0 Guide**: Complete implementation guide for Data Vault methodology
-- **Environment Configuration**: Database and environment setup details
-- **Best Practices**: Technical standards and conventions
-
-## Project Work Tracking
-
-Active use case documentation in `docs/work_tracking/ai_transformation/use_cases/`:
-- **UC01 Data Vault Refactor**: 3NF to Data Vault 2.0 migration
-- **UC02 EDW2 Refactor**: WhereScape to dbt migration
-
-Each use case has its own `.ai/instructions.md` for context-specific guidance.
+```
+docs/knowledge-base/
+├── domain-guide.md              # Domain-specific implementation guide
+├── environment-setup.md         # Environment configuration
+└── best-practices.md            # Standards and conventions
+```
 
 ## AI Resources
 
 ### Expert Prompts
-Specialized prompts for specific tasks in `ai-resources/prompts/`:
-- **Documentation Architect**: `@ai-resources/prompts/documentation/arcdoc-documentation-architect.md`
-- **Data Vault Architect**: Architecture and modeling guidance
-- **Diagram Specialist**: Technical diagram creation and updates
-- **Career Tools**: Pitch deck builder, career path planning
+This repository includes specialized prompts in `ai-resources/prompts/`:
+- **Documentation**: Architecture docs, project docs, meeting notes
+- **Career**: Career planning, resume building, job search
+- **Meta**: Prompt engineering and library management
+- **Architecture**: Technical design and diagramming
+- **Development**: Coding assistance
+- **Utilities**: Productivity tools (Excel, gift finder, etc.)
 
 ### Skills
-Custom skills for specialized workflows in `ai-resources/skills/`
-
-## Key Reference Files
-
-- **Legacy Data Dictionary**: `code/repositories/legacy_data_dictionary.csv` - Source system metadata and business context
-- **Main README**: Root README.md - Project overview and getting started guide
+Packaged skills for specialized workflows in `ai-resources/skills/`
 
 ## Usage Notes
 
-When working on architecture or business rules:
-1. Reference the appropriate `docs/architecture/` documents
-2. Follow patterns defined in `docs/architecture/patterns/`
-3. Use expert prompts from `ai-resources/prompts/` when needed
-4. Maintain documentation using the multi-audience format (Executive Summary, Analytical Overview, Technical Architecture, Implementation Details)
+When working with this repository:
+1. Browse prompts in `ai-resources/prompts/` by category
+2. Reference the prompt README for mnemonic shortcuts (e.g., @architect, @tutor)
+3. Customize prompts with your domain-specific knowledge
+4. Maintain documentation using consistent formats (frontmatter, versioning, etc.)

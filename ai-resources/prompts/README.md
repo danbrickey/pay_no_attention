@@ -1,8 +1,8 @@
 ---
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
-last_updated: "2025-10-19"
-version: "2.2.0"
+last_updated: "2025-10-25"
+version: "2.4.0"
 category: "prompts-index"
 tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
 status: "current"
@@ -12,7 +12,7 @@ usage: "Centralized library of reusable prompt templates for consistent AI assis
 
 # AI Prompts Library - Master Catalog
 
-Welcome to the centralized AI prompts library for the EDP AI Expert Team project. All general-purpose and reusable prompts are organized here by category for easy discovery and maintenance.
+Welcome to the AI Prompts Library - a comprehensive collection of reusable prompt templates for AI assistance across career development, technical work, documentation, and personal productivity.
 
 ## 🔍 Mnemonic Quick Reference
 
@@ -20,9 +20,10 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 
 | Mnemonic | Prompt | Purpose |
 |----------|--------|---------|
-| **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Manage prompt library organization & metadata |
-| **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Create high-quality prompts with evaluation |
-| **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data Vault 2.0 & dimensional modeling expert |
+| **@meta-librarian** ⭐ | [Meta-Librarian Architect](meta/meta-librarian-architect.md) | **UNIFIED** (recommended): Create + assess + organize |
+| **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Prompt engineering only (focused) |
+| **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Library management only (focused) |
+| **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data architecture & modeling expert |
 | **@arcdoc** | [Architecture Docs](documentation/arcdoc-documentation-architect.md) | Architecture documentation with business rules |
 | **@bizrules** | [Business Rules](documentation/bizrules-documenter.md) | Document business rules from code |
 | **@projdoc** | [Project Docs](documentation/projdoc-expert.md) | Create project documentation |
@@ -81,11 +82,21 @@ Prompts for generating and managing various types of documentation:
 
 Tools for creating and improving prompts themselves:
 
-- **[@librarian](meta/librarian-prompt-management.md)** - Intelligent library management system for organizing, discovering, and enhancing prompts with adaptive expertise.
-- **[@meta](meta/meta-prompt-engineer.md)** - Meta-prompt engineering expert using systematic evaluation methodology. Creates high-quality prompts with self-evaluation and iterative refinement.
+> 💡 **New to meta prompts?** Start with `@meta-librarian` - it does everything.
+> Already have a prompt and just need to organize it? Use `@librarian` for simplicity.
+> Want to experiment with just prompt creation? Use `@meta` for focused workflow.
+
+### Primary Tool (Recommended)
+- **[@meta-librarian](meta/meta-librarian-architect.md)** ⭐ - **UNIFIED SYSTEM**: Combines prompt engineering (systematic evaluation), agentic workflow assessment (when to use subagents), and library management (organization & discovery). **Most users want this.**
+
+### Standalone Components (Focused Tools)
+- **[@meta](meta/meta-prompt-engineer.md)** - Prompt engineering only: Creates high-quality prompts using systematic evaluation methodology with 3 candidates, rubric scoring, and evidence-based selection.
+- **[@librarian](meta/librarian-prompt-management.md)** - Library management only: Organizes, categorizes, discovers, and maintains the prompt library with metadata enhancement.
+
+### Supporting Resources
+- **[prompting-pattern-library/](meta/prompting-pattern-library/)** - Comprehensive library of prompting patterns, techniques, and best practices (25+ patterns, failure modes, model quirks).
+- **[agentic-development/](meta/agentic-development/)** - Expert guidance on building autonomous AI agents and agentic workflows ("Just Talk To It" methodology).
 - **[data_vault_refactor_prompt_generator.md](meta/data_vault_refactor_prompt_generator.md)** - Generator for creating Data Vault refactoring prompts for specific tables/entities.
-- **[prompting-pattern-library/](meta/prompting-pattern-library/)** - Comprehensive library of prompting patterns, techniques, and best practices.
-- **[agentic-development/](meta/agentic-development/)** - Expert guidance on building autonomous AI agents and agentic workflows.
 
 ---
 
@@ -190,39 +201,36 @@ Productivity tools and automation utilities:
 
 ---
 
-## 📍 Project-Specific Prompts (Kept in Context)
-
-Some prompts are kept with their specific use cases for archival purposes:
-
-### Data Vault Refactor Prompts (UC01)
-**Location**: `docs/work_tracking/ai_transformation/use_cases/uc01_dv_refactor/refactor_prompts/`
-
-See [PROMPTS.md](../../docs/work_tracking/ai_transformation/use_cases/uc01_dv_refactor/PROMPTS.md) for UC01-specific refactor prompts.
-
 ---
 
 ## 🚀 Usage Guidelines
 
 ### Using Prompts in Claude Code
 
-Reference prompts using the @-mention syntax:
+Reference prompts using the @-mention syntax with mnemonics:
 ```
-@ai-resources/prompts/architecture/architecture_documentation_architect.md review my architecture documentation for gaps
+@architect help me design a data architecture
+@tutor create a learning plan for Python
+@giftfinder help me find a gift for my friend
+```
+
+Or reference the full path:
+```
+@ai-resources/prompts/documentation/arcdoc-documentation-architect.md review my docs
 ```
 
 ### Creating New Prompts
 
-1. Use [@meta/meta-prompt-engineer.md](meta/meta-prompt-engineer.md) to create high-quality prompts with systematic evaluation
-2. Place general-purpose prompts in the appropriate category folder
-3. Place project-specific prompts with their use case documentation
-4. Update this README catalog when adding new prompts
+1. Use [@meta](meta/meta-prompt-engineer.md) to create high-quality prompts with systematic evaluation
+2. Place prompts in the appropriate category folder
+3. Update this README catalog when adding new prompts
+4. Use consistent frontmatter with title, author, version, tags
 
 ### Prompt Maintenance
 
 - **Versioning**: Update version numbers in frontmatter when making significant changes
 - **Documentation**: Keep this README updated with new prompts
-- **Archival**: When use cases complete, archive project-specific prompts with the use case folder
-- **Centralization**: Keep general-purpose prompts here; avoid duplication across the repository
+- **Organization**: Keep prompts organized by category for easy discovery
 
 ---
 
@@ -232,24 +240,24 @@ Reference prompts using the @-mention syntax:
 |----------|-------|----------|
 | Architecture | 3 | Technical design, Data Vault, diagrams, requirements |
 | Documentation | 4 | Project docs, business rules, meeting notes |
-| Meta | 5 | Prompt engineering, library management, patterns, agentic development |
+| Meta | 6 | Prompt engineering, library management, patterns, agentic development, unified architect |
 | Career | 20 | Career planning, AI roles, job search, resume building |
 | Workflows | 4 | Multi-step processes (slide decks) |
 | Specialized | 1 | Domain utilities (tutoring) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Utilities | 3 | Excel automation, gift shopping, productivity tools |
-| **Total** | **42** | Centralized general-purpose prompts |
+| **Total** | **43** | Centralized general-purpose prompts |
 
 ---
 
 ## 🔗 Related Resources
 
-- **Context Documents**: [ai-resources/context-documents/](../context-documents/)
-- **Architecture Documentation**: [docs/architecture/](../../docs/architecture/)
-- **Project Instructions**: [CLAUDE.md](../../CLAUDE.md)
+- **Configuration**: [.ai/instructions.md](../../.ai/instructions.md) - Customize with your personal context
+- **Additional Context**: [.ai/context.md](../../.ai/context.md) - Optional domain-specific context
+- **Skills**: [ai-resources/skills/](../skills/) - Packaged skill files
 
 ---
 
-*Last Updated: 2025-10-19 by Dan Brickey*
-*Version v2.2.0: Added @giftfinder utility prompt for intelligent gift shopping*
+*Last Updated: 2025-10-25 by Dan Brickey*
+*Version v2.4.0: Added unified @meta-librarian architect combining prompt engineering, agentic assessment, and library management*
