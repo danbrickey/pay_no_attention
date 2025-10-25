@@ -2,7 +2,7 @@
 title: "Meta-Librarian Architect: Unified Prompt Engineering & Library Management"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "1.0.0"
+version: "1.1.0"
 category: "meta"
 tags: ["prompt-engineering", "library-management", "agentic-workflows", "meta-prompting", "self-evaluation"]
 status: "active"
@@ -10,7 +10,10 @@ audience: ["prompt-engineers", "library-maintainers", "ai-architects"]
 purpose: "Unified system for creating evaluated prompts, assessing agentic workflow needs, and organizing prompt libraries"
 mnemonic: "@meta-librarian"
 complexity: "advanced"
-related_prompts: ["meta/meta-prompt-engineer.md", "meta/librarian-prompt-management.md"]
+related_prompts: ["meta/meta-prompt-engineer.md", "meta/librarian-prompt-management.md", "meta/nav-resource-navigator.md"]
+changelog:
+  - "1.1.0 (2025-10-25): Added prompt registration workflow with Navigator cheatsheet updates and documentation index registration"
+  - "1.0.0 (2025-10-25): Initial unified system combining meta-prompt engineering, agentic assessment, and library management"
 ---
 
 # Meta-Librarian Architect
@@ -454,7 +457,62 @@ complexity: "basic | intermediate | advanced"  # Optional
 - Version follows semantic versioning
 - Mnemonic (if provided) is unique
 
-### Function 5: Library Maintenance & Audit
+### Function 5: Prompt Registration Workflow
+
+**CRITICAL**: Every time a prompt is created or significantly modified, it must be registered in multiple locations to maintain library discoverability.
+
+**Registration Checklist** (complete ALL steps):
+
+1. **Create/Update the Prompt File**
+   - Place in appropriate category folder
+   - Include complete frontmatter metadata
+   - Assign mnemonic if frequently used
+
+2. **Update Master README** (`ai-resources/prompts/README.md`)
+   - Add to relevant category section with description
+   - Add to mnemonic quick reference table (if has mnemonic)
+   - Update category count in Quick Reference table
+   - Update version and last_updated in frontmatter
+
+3. **Update Navigator Routing** (`meta/nav-resource-navigator.md`) ⭐ **NEW REQUIREMENT**
+   - Update "Quick Routing Cheatsheet" table with routing patterns
+   - Add rows showing how users would discover this prompt
+   - Update category counts in Knowledge Base section
+   - Ensure intent patterns match prompt's purpose
+
+**Example Navigator Update**:
+If you create a prompt for "API documentation generation" in `documentation/api-doc-generator.md`:
+- Add row: `"Document API/endpoints" | documentation/api-doc-generator.md | architecture/ (design docs)`
+- Update documentation count: (4) → (5)
+
+**Why This Matters**:
+The Navigator is the entry point to the ecosystem. If prompts aren't registered in its cheatsheet, users won't discover them through @nav routing.
+
+**Special Instructions for Documentation-Generating Prompts**:
+
+If the prompt creates documentation (not code, but actual docs in `docs/` folder), also instruct it to:
+
+1. **Register in Documentation Index** (`docs/documentation-index.md`)
+   - Add to "Quick Navigation by Intent" with user-friendly question patterns
+   - Add to "Index by Document Type" with description and link
+   - Add to "Index by Category" under appropriate topic
+   - Update version and last_updated in frontmatter
+
+2. **Use Documentation Taxonomy** (`docs/taxonomy.md`)
+   - Use controlled vocabulary terms from taxonomy.md in frontmatter
+   - Follow taxonomy for `document_type`, `category`, `tags`, `audience`, `status`
+   - Propose new taxonomy terms if needed (with justification)
+
+3. **Include Registration Reminder in Prompt**
+   - Documentation-generating prompts should explicitly instruct the AI to update documentation-index.md after creating docs
+   - This ensures docs are discoverable through @nav and @arcdoc discovery modes
+
+**Example Documentation Prompts**:
+- [@arcdoc](arcdoc-documentation-architect.md) - Already includes index maintenance instructions
+- [@projdoc](projdoc-expert.md) - Should include index maintenance instructions
+- [@bizrules](bizrules-documenter.md) - Should include index maintenance instructions
+
+### Function 6: Library Maintenance & Audit
 
 **Audit Focus Areas**:
 - **Consistency**: All prompts follow frontmatter schema
@@ -561,6 +619,14 @@ You categorize:
 - Add under Workflows section: "Legacy Refactoring (4-step workflow for modernizing code)"
 - Update workflow count (4 → 5)
 - Update last_updated and version
+- Add to mnemonic table if prompt has a mnemonic
+
+**Navigator Registration** (REQUIRED for all new/modified prompts):
+After organizing in the library, update the Navigator's routing cheatsheet:
+1. Open `meta/nav-resource-navigator.md`
+2. Update the "Quick Routing Cheatsheet" table with new routing patterns
+3. Add or modify rows that reflect how users would discover this prompt
+4. Update category counts in the Knowledge Base section if needed
 
 **Frontmatter** (example for 01_legacy-analyzer.md):
 ```yaml

@@ -215,7 +215,7 @@ Use this section to capture ideas throughout the year as you think of them or as
 1. **Replace all bracketed placeholders** with actual information (or "Unknown" if you don't know yet)
 2. **Fill in the frontmatter** at the top (title, dates, category, tags)
 3. **Save with naming convention**: `FirstName-LastName.md` in appropriate category folder
-4. **Add to PROFILE-INDEX.md** so it's searchable
+4. **Add to profile-index.md** so it's searchable
 5. **Delete this "Template Usage Instructions" section** before saving
 
 **Don't worry about completing everything immediately** - fill in what you know and add more over time!

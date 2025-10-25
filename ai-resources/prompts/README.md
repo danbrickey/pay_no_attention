@@ -2,7 +2,7 @@
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "2.4.0"
+version: "2.5.0"
 category: "prompts-index"
 tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
 status: "current"
@@ -20,6 +20,7 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 
 | Mnemonic | Prompt | Purpose |
 |----------|--------|---------|
+| **@nav** 🧭 | [Navigator](meta/nav-resource-navigator.md) | **START HERE**: Route to right prompts/docs/workflows |
 | **@meta-librarian** ⭐ | [Meta-Librarian Architect](meta/meta-librarian-architect.md) | **UNIFIED** (recommended): Create + assess + organize |
 | **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Prompt engineering only (focused) |
 | **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Library management only (focused) |
@@ -85,6 +86,9 @@ Tools for creating and improving prompts themselves:
 > 💡 **New to meta prompts?** Start with `@meta-librarian` - it does everything.
 > Already have a prompt and just need to organize it? Use `@librarian` for simplicity.
 > Want to experiment with just prompt creation? Use `@meta` for focused workflow.
+
+### Navigation & Orchestration
+- **[@nav](meta/nav-resource-navigator.md)** 🧭 - **START HERE**: Intelligent routing assistant that knows the entire AI resources ecosystem. Directs you to the right prompts, docs, or workflows - and recommends creating new resources when gaps exist. **Use this when you're not sure which prompt to use.**
 
 ### Primary Tool (Recommended)
 - **[@meta-librarian](meta/meta-librarian-architect.md)** ⭐ - **UNIFIED SYSTEM**: Combines prompt engineering (systematic evaluation), agentic workflow assessment (when to use subagents), and library management (organization & discovery). **Most users want this.**
@@ -240,14 +244,14 @@ Or reference the full path:
 |----------|-------|----------|
 | Architecture | 3 | Technical design, Data Vault, diagrams, requirements |
 | Documentation | 4 | Project docs, business rules, meeting notes |
-| Meta | 6 | Prompt engineering, library management, patterns, agentic development, unified architect |
+| Meta | 7 | Navigation/routing, prompt engineering, library management, patterns, agentic development, unified architect |
 | Career | 20 | Career planning, AI roles, job search, resume building |
 | Workflows | 4 | Multi-step processes (slide decks) |
 | Specialized | 1 | Domain utilities (tutoring) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Utilities | 3 | Excel automation, gift shopping, productivity tools |
-| **Total** | **43** | Centralized general-purpose prompts |
+| **Total** | **44** | Centralized general-purpose prompts |
 
 ---
 
@@ -260,4 +264,4 @@ Or reference the full path:
 ---
 
 *Last Updated: 2025-10-25 by Dan Brickey*
-*Version v2.4.0: Added unified @meta-librarian architect combining prompt engineering, agentic assessment, and library management*
+*Version v2.5.0: Added @nav Navigator for intelligent routing to prompts/docs/workflows - your entry point to the AI resources ecosystem*

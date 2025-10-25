@@ -18,8 +18,8 @@ This directory contains organized profiles for gift recipients across different 
 ```
 docs/gift-profiles/
 ├── README.md                    ← You are here
-├── PROFILE-INDEX.md             ← Quick lookup by name/address/description
-├── PROFILE-TEMPLATE.md          ← Template for creating new profiles
+├── profile-index.md             ← Quick lookup by name/address/description
+├── profile-template.md          ← Template for creating new profiles
 ├── family/                      ← Immediate family members
 ├── extended-family/             ← Aunts, uncles, cousins, in-laws
 ├── friends/                     ← Close friends and social circle
@@ -32,11 +32,11 @@ docs/gift-profiles/
 
 ### Creating a New Profile
 
-1. **Copy the template**: Use [PROFILE-TEMPLATE.md](PROFILE-TEMPLATE.md) as your starting point
+1. **Copy the template**: Use [profile-template.md](profile-template.md) as your starting point
 2. **Choose category**: Decide which subfolder fits best (family, friends, etc.)
 3. **Name the file**: Use format `FirstName-LastName.md` (e.g., `Jane-Smith.md`)
 4. **Fill in details**: Add what you know now; leave blanks for later
-5. **Update index**: Add entry to [PROFILE-INDEX.md](PROFILE-INDEX.md) for searchability
+5. **Update index**: Add entry to [profile-index.md](profile-index.md) for searchability
 
 ### Finding a Profile
 
@@ -45,7 +45,7 @@ docs/gift-profiles/
 - Profiles are alphabetically organized by filename
 
 **Method 2: Search by Name/Address**
-- Open [PROFILE-INDEX.md](PROFILE-INDEX.md)
+- Open [profile-index.md](profile-index.md)
 - Use Ctrl+F (or Cmd+F) to search by:
   - Name
   - Address
@@ -108,7 +108,7 @@ Use this format for easy alphabetical browsing:
 
 ## Searchable Index
 
-The [PROFILE-INDEX.md](PROFILE-INDEX.md) file provides quick lookup functionality. It includes:
+The [profile-index.md](profile-index.md) file provides quick lookup functionality. It includes:
 - **Name** (with nicknames/aliases)
 - **Category** (which folder)
 - **Address** (for card sending or reference)
@@ -133,9 +133,9 @@ The [PROFILE-INDEX.md](PROFILE-INDEX.md) file provides quick lookup functionalit
 
 | Task | How To |
 |------|--------|
-| **Create new profile** | Copy [PROFILE-TEMPLATE.md](PROFILE-TEMPLATE.md) → Fill in → Save to category folder → Update index |
-| **Find by name** | Open [PROFILE-INDEX.md](PROFILE-INDEX.md) → Ctrl+F → Search name |
-| **Find by address** | Open [PROFILE-INDEX.md](PROFILE-INDEX.md) → Ctrl+F → Search address |
+| **Create new profile** | Copy [profile-template.md](profile-template.md) → Fill in → Save to category folder → Update index |
+| **Find by name** | Open [profile-index.md](profile-index.md) → Ctrl+F → Search name |
+| **Find by address** | Open [profile-index.md](profile-index.md) → Ctrl+F → Search address |
 | **Find by interest** | Use Grep tool to search across all `.md` files in gift-profiles/ for keyword |
 | **Record a gift** | Open profile → Add to "Gifts Given" table → Update "Last Updated" date |
 | **Get gift ideas** | Use `@giftfinder` with the profile as context |
@@ -161,9 +161,9 @@ The [PROFILE-INDEX.md](PROFILE-INDEX.md) file provides quick lookup functionalit
 **First time using this system?**
 
 1. Start with your closest 5-10 people (immediate family, best friends)
-2. Use [PROFILE-TEMPLATE.md](PROFILE-TEMPLATE.md) to create their profiles
+2. Use [profile-template.md](profile-template.md) to create their profiles
 3. Fill in what you know; leave blanks for "Unknown"
-4. Add them to [PROFILE-INDEX.md](PROFILE-INDEX.md)
+4. Add them to [profile-index.md](profile-index.md)
 5. Update profiles as you learn more throughout the year
 
 **Before the next holiday season**, you'll have a rich database of gift ideas and preferences!
