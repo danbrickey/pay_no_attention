@@ -1,12 +1,12 @@
 ---
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
-last_updated: "2025-10-25"
-version: "3.2.0"
+last_updated: "2025-10-26"
+version: "3.3.0"
 category: "prompts-index"
-tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates", "cloud", "api", "security", "navigation", "discovery"]
+tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates", "cloud", "api", "security", "navigation", "discovery", "therapy"]
 status: "current"
-contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "templates", "navigation"]
+contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "therapy", "templates", "navigation"]
 usage: "Centralized library of reusable prompt templates for consistent AI assistance across all domains"
 ---
 
@@ -56,6 +56,8 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 | **@equipment-doc** | [Equipment Maintenance Documenter](utilities/equipment-maintenance-documenter.md) | Create maintenance docs for equipment/tools/vehicles |
 | **@maintenance-planner** | [Household Maintenance Planner](utilities/household-maintenance-planner.md) | Master schedule with optimization & budgeting |
 | **@giftfinder** | [Gift Finder](utilities/giftfinder-shopping-assistant.md) | Gift shopping with recipient profiling & web search |
+| **@therapy-assistant** | [Integrative Therapy Assistant](therapy/therapy-assistant.md) | General therapeutic support combining validation with skill-building |
+| **@neuro-therapist** | [Neurodivergent Therapy Specialist](therapy/therapist.md) | Specialized therapy for ADHD, autism, and neurodivergent individuals |
 
 ---
 
@@ -71,6 +73,7 @@ ai-resources/prompts/
 ├── specialized/           ← Domain-specific utility prompts
 ├── development/           ← Software development & coding prompts
 ├── strategy/              ← Strategic planning & evaluation prompts
+├── therapy/               ← Mental health & therapeutic support prompts
 └── utilities/             ← Productivity & automation utilities
 ```
 
@@ -340,6 +343,21 @@ Strategic planning, evaluation, and decision-making prompts:
 
 ---
 
+## 🧠 Therapy & Mental Health Support
+
+**Location**: [therapy/](therapy/)
+
+AI-assisted therapeutic support with appropriate professional boundaries:
+
+- **[@therapy-assistant](therapy/therapy-assistant.md)** - **General Population**: Integrative therapy assistant combining emotional validation with practical therapeutic techniques. Supports skill-building across CBT, DBT, and humanistic approaches with comprehensive session documentation.
+- **[@neuro-therapist](therapy/therapist.md)** - **Neurodivergent Specialist**: Therapy assistant specifically designed for ADHD, autism, anxiety, and other neurodivergent individuals. Features sensory accommodations, concrete interventions, masking trauma processing, and self-advocacy skill development.
+
+**Important**: These prompts provide therapeutic support and session documentation but are not replacements for professional mental health care. Both include clear referral guidelines and crisis intervention protocols.
+
+**Session Documentation**: Automatically creates structured notes in `docs/therapy-sessions/` for continuity and professional consultation.
+
+---
+
 ## 🛠️ Utilities
 
 **Location**: [utilities/](utilities/)
@@ -404,8 +422,9 @@ Or reference the full path:
 | Specialized | 2 | Domain utilities (tutoring, coaching sessions) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
+| Therapy | 2 | Mental health support (general + neurodivergent specialist), session documentation, professional referral guidance |
 | Utilities | 5 | Home/equipment maintenance, Excel automation, gift shopping, productivity tools |
-| **Total** | **93 ready + 3 templates** | Centralized general-purpose prompts + reusable templates + navigation tools |
+| **Total** | **95 ready + 3 templates** | Centralized general-purpose prompts + reusable templates + navigation tools |
 
 ---
 
@@ -417,5 +436,5 @@ Or reference the full path:
 
 ---
 
-*Last Updated: 2025-10-25 by Dan Brickey*
-*Version v3.0.0: **Phase 5A Complete** - Enhanced Navigation & Discovery System. Created @discover (interactive prompt finder), Quick Start Guide (persona-based top picks), and upgraded @nav Navigator v2.0 with architecture expert routing and decision trees. Library now has comprehensive discovery tools to help users find the right prompt from 90+ options.*
+*Last Updated: 2025-10-26 by Dan Brickey*
+*Version v3.3.0: **Therapy Support Addition** - Added comprehensive therapy assistance with @therapy-assistant (general population) and @neuro-therapist (neurodivergent specialist). Includes session documentation system in docs/therapy-sessions/ and professional referral frameworks. Library now supports mental health alongside technical and career development.*
