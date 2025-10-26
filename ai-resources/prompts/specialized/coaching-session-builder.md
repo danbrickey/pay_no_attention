@@ -40,6 +40,8 @@ Examples:
 - "Effective 1-on-1s for new managers"
 - "API design principles for backend engineers"
 - "Home network security for non-technical homeowners"
+- "Career transition planning for professionals considering new fields"
+- "Understanding your work preferences and values for career satisfaction"
 
 Your topic and audience:
 ```
@@ -665,6 +667,25 @@ By the end of this session, you'll be able to:
 - Troubleshooting table for frequent issues
 - Memorable principles/mnemonics
 
+### For Career Coaching Sessions
+
+**Leverage AI Resources**:
+- Use [@career-preferences](../career/career-preferences-interviewer.md) as pre-work or live assessment
+- Reference [Career Transition Step 0](../workflows/career-transition/00_career_preferences.md) for systematic preference discovery
+- Connect insights to broader career transition workflow (Steps 1-4)
+- Include preference profile integration in all career-focused modules
+
+**Structure Considerations**:
+- Always start with self-awareness before external options
+- Use participant's actual work history as examples
+- Address common career myths and misconceptions
+- Provide clear next steps in the career development process
+
+**Assessment Integration**:
+- Reference completed assessments rather than recreating them
+- Build on structured interview results for deeper exploration
+- Connect preferences to real job characteristics and company cultures
+
 ---
 
 ## Coaching Tone Guidelines
@@ -752,6 +773,70 @@ After gathering requirements, deliver in this order:
 
 4. **Quick Reference Guide**
 [Full quick reference as specified above]
+
+---
+
+## Career Coaching Resources
+
+When creating career-focused coaching sessions, leverage these specialized AI resources:
+
+### Career Preferences & Values Discovery
+
+**[@career-preferences](../career/career-preferences-interviewer.md)** - Career Preferences & Values Interviewer
+- **Purpose**: Systematic interview to discover career preferences, work environment needs, values, and motivations
+- **Duration**: 20-30 minutes
+- **Output**: Structured preference profile
+- **Best for**: Understanding what makes people thrive at work beyond just skills
+
+**Use in coaching sessions**:
+- **Module 1**: Foundation understanding of self-awareness in career decisions
+- **Hands-on exercise**: Complete the preferences interview
+- **Takeaway**: Personal career preference profile to guide future decisions
+
+### Career Transition Workflow Integration
+
+**[Career Transition Workflow Step 0](../workflows/career-transition/00_career_preferences.md)** - Optional but highly recommended first step
+- **Purpose**: Understand work preferences and values before analyzing career paths
+- **Position**: Precedes the main 4-step career transition workflow
+- **Why it matters**: Ensures career choices align with who you are, not just what you can do
+
+**Integration strategies**:
+1. **Pre-work assignment**: Have participants complete Step 0 before your coaching session
+2. **Session opener**: Use their preference profile as foundation for career exploration
+3. **Decision framework**: Reference preferences when evaluating career options
+4. **Next steps**: Connect to full career transition workflow (Steps 1-4)
+
+**Example coaching flow**:
+```markdown
+# Coaching Session: Finding Your Ideal Career Path
+
+## Prerequisites
+- Complete [Career Preferences Discovery](../workflows/career-transition/00_career_preferences.md) (20-30 min)
+- Bring your preference profile to the session
+
+## Session Structure (60 minutes)
+- Opening (10 min): Review preference profile insights
+- Module 1 (20 min): Understanding career-preference alignment
+- Module 2 (20 min): Exploring career options through your preference lens
+- Module 3 (10 min): Next steps in career transition workflow
+```
+
+### Career Coaching Best Practices
+
+**Leverage existing assessments**:
+- Always start with preferences before skills assessment
+- Use structured interviews rather than generic personality tests
+- Focus on work environment factors, not just job functions
+
+**Connect to larger workflows**:
+- Position as Step 0 of career transition process
+- Reference other career prompts in the library (60+ available)
+- Create clear pathways to next steps
+
+**Practical application**:
+- Help participants see patterns in their work history
+- Connect preferences to real job characteristics
+- Address misalignment between current role and preferences
 
 ---
 
@@ -859,6 +944,8 @@ Before delivering, verify:
 
 ## Example Coaching Moment
 
+### Technical Coaching Example
+
 **Instructor's Guide Excerpt**:
 ```markdown
 ### Module 2: Git Branching (20 minutes)
@@ -896,6 +983,57 @@ git checkout -b feature-name
 ```
 **What it does**: Creates new branch and switches to it
 **📖 Details**: [Student Manual - Understanding Branches](#understanding-branches-as-pointers)
+```
+
+### Career Coaching Example
+
+**Instructor's Guide Excerpt**:
+```markdown
+### Module 2: Understanding Work Environment Preferences (25 minutes)
+
+**Socratic Moment**:
+🤔 **Question**: "Think about a time when you felt really energized at work and a time when you felt drained. What was different about the environment or situation?"
+
+- **What you're looking for**: Recognition that energy comes from environment/context, not just tasks
+- **If they struggle**: "Was it the people around you? The pace? The type of decisions you had to make?"
+- **A-ha moment**: "Oh! It wasn't the work itself - it was how the work was structured and who I was working with!"
+
+**Integration with AI Resources**:
+- Reference their [@career-preferences interview results](../career/career-preferences-interviewer.md)
+- Connect insights to [Career Transition Step 0](../workflows/career-transition/00_career_preferences.md) outcomes
+```
+
+**Student Manual Excerpt**:
+```markdown
+### Understanding Your Work Environment Preferences
+
+**What it is**:
+Your work environment preferences are the conditions, contexts, and structures that help you do your best work. These go beyond job duties to include team dynamics, decision-making processes, communication styles, and organizational culture.
+
+**Why it matters**:
+Two people with identical skills can have completely different career satisfaction based on work environment fit. Understanding your preferences helps you choose roles where you'll thrive, not just survive.
+
+**Using Your Career Preferences Profile**:
+If you completed the [@career-preferences interview](../career/career-preferences-interviewer.md), review your:
+- Work environment preferences (team size, structure, autonomy level)
+- Communication style preferences (meetings, async, 1-on-1s)
+- Decision-making preferences (data-driven, collaborative, fast-paced)
+- Energy sources vs. energy drains
+
+**Next Steps**:
+Your preferences profile becomes the foundation for [Career Transition Step 1](../workflows/career-transition/01_career_analysis.md) where you'll analyze career paths through this lens.
+```
+
+**Quick Reference Excerpt**:
+```markdown
+### Assess Environment Fit
+**Questions to ask**:
+- Does this role match my energy sources?
+- Are the communication patterns aligned with my preferences?
+- Will the decision-making style work for me?
+
+**📖 Details**: [Student Manual - Work Environment Preferences](#understanding-your-work-environment-preferences)
+**🔗 Assessment**: [Career Preferences Interview](../career/career-preferences-interviewer.md)
 ```
 
 ---
