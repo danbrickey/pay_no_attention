@@ -2,9 +2,9 @@
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "2.8.0"
+version: "2.9.0"
 category: "prompts-index"
-tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates"]
+tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates", "cloud", "api", "security"]
 status: "current"
 contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "templates"]
 usage: "Centralized library of reusable prompt templates for consistent AI assistance across all domains"
@@ -24,12 +24,15 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 | **@meta-librarian** ⭐ | [Meta-Librarian Architect](meta/meta-librarian-architect.md) | **UNIFIED** (recommended): Create + assess + organize |
 | **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Prompt engineering only (focused) |
 | **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Library management only (focused) |
-| **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data architecture & modeling expert |
+| **@architect** | [Data Architect](architecture/architect-data-vault.md) | Data architecture & modeling expert (Data Vault 2.0) |
+| **@cloud** | [Cloud Architect](architecture/cloud-architect.md) | Cloud architecture expert (AWS, Azure, GCP) |
+| **@api** | [API Architect](architecture/api-architect.md) | API architecture expert (REST, GraphQL, gRPC) |
+| **@security** | [Security Architect](architecture/security-architect.md) | Security architecture expert (zero-trust, compliance) |
 | **@arcdoc** | [Architecture Docs](documentation/arcdoc-documentation-architect.md) | Architecture documentation with business rules |
 | **@bizrules** | [Business Rules](documentation/bizrules-documenter.md) | Document business rules from code |
 | **@projdoc** | [Project Docs](documentation/projdoc-expert.md) | Create project documentation |
 | **@meeting** | [Meeting Notes](documentation/meeting-notes-summarizer.md) | Summarize meetings to action items |
-| **@drawio** | [Drawio Specialist](architecture/drawio-specialist.md) | Create/edit Draw.io diagrams |
+| **@drawio** | [Drawio Specialist](architecture/drawio-diagram-specialist.md) | Create/edit Draw.io diagrams |
 | **@tutor** | [AI Tutor](specialized/tutor-learning-assistant.md) | Personalized learning & skill development |
 | **@equipment-doc** | [Equipment Maintenance Documenter](utilities/equipment-maintenance-documenter.md) | Create maintenance docs for equipment/tools/vehicles |
 | **@maintenance-planner** | [Household Maintenance Planner](utilities/household-maintenance-planner.md) | Master schedule with optimization & budgeting |
@@ -62,6 +65,9 @@ Expert prompts for data architecture, technical design, and diagramming:
 
 ### Ready-to-Use Architecture Experts
 - **[@architect](architecture/architect-data-vault.md)** - Data architecture expert for Data Vault 2.0, dimensional modeling, and Snowflake platform design.
+- **[@cloud](architecture/cloud-architect.md)** - Cloud architecture expert for AWS, Azure, and GCP. Covers cloud-native patterns, Well-Architected Framework, multi-cloud strategies, and cost optimization.
+- **[@api](architecture/api-architect.md)** - API architecture expert for REST, GraphQL, and gRPC. Specializes in microservices communication, API gateways, security, and developer experience.
+- **[@security](architecture/security-architect.md)** - Security architecture expert for zero-trust, threat modeling, compliance (GDPR, HIPAA, PCI-DSS, SOC2), and defense-in-depth strategies.
 - **[@drawio](architecture/drawio-diagram-specialist.md)** - Specialist for creating and editing Draw.io diagrams for architecture documentation.
 - **[technical-requirements/](architecture/technical-requirements/)** - Systematic approach to defining, documenting, and validating technical requirements for software projects.
 
@@ -352,7 +358,7 @@ Or reference the full path:
 
 | Category | Count | Use Case |
 |----------|-------|----------|
-| Architecture | 3 ready + 3 templates | Technical design, Data Vault, diagrams, requirements + reusable templates |
+| Architecture | 6 ready + 3 templates | Data Vault, Cloud (AWS/Azure/GCP), API (REST/GraphQL/gRPC), Security (zero-trust), diagrams, requirements + reusable templates |
 | Documentation | 4 | Project docs, business rules, meeting notes |
 | Meta | 7 | Navigation/routing, prompt engineering, library management, patterns, agentic development, unified architect |
 | Career | 60 | Career planning across all industries: AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus analyzer & tools |
@@ -361,7 +367,7 @@ Or reference the full path:
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Utilities | 5 | Home/equipment maintenance, Excel automation, gift shopping, productivity tools |
-| **Total** | **85 ready + 3 templates** | Centralized general-purpose prompts + reusable architecture templates |
+| **Total** | **88 ready + 3 templates** | Centralized general-purpose prompts + reusable architecture templates |
 
 ---
 
@@ -374,4 +380,4 @@ Or reference the full path:
 ---
 
 *Last Updated: 2025-10-25 by Dan Brickey*
-*Version v2.8.0: **Phase 3 Complete** - Added Architecture Prompt Templates system with 3 generalized templates (General Architecture Expert, Technical Documentation Architect, Visual Architecture Specialist). Templates extract common patterns from successful specialized prompts (@architect, @arcdoc, @drawio) and make them reusable for creating new prompts in different domains. Updated specialized prompts with template metadata to track lineage.*
+*Version v2.9.0: **Phase 4 Complete** - Created 3 production-ready architecture experts from templates: @cloud (AWS/Azure/GCP cloud architecture), @api (REST/GraphQL/gRPC API design), @security (zero-trust, threat modeling, compliance). These demonstrate the template system in action and provide immediate value for cloud, API, and security architecture guidance.*

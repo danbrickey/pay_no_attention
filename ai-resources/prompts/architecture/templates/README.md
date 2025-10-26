@@ -167,8 +167,9 @@ Template (Generalized)  →  Specialized Instance (Domain-Specific)
 ────────────────────────────────────────────────────────────────
 
 General Architecture     →  @architect (Data Vault specialist)
-Expert Template          →  [Your Cloud Architecture expert]
-                         →  [Your Software Architecture expert]
+Expert Template          →  @cloud (Cloud/AWS/Azure/GCP expert)
+                         →  @api (REST/GraphQL/gRPC expert)
+                         →  @security (Zero-trust/compliance expert)
 
 Technical Documentation  →  @arcdoc (EDP documentation architect)
 Architect Template       →  [Your API documentation system]
