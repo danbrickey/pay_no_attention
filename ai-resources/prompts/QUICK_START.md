@@ -34,6 +34,7 @@ Welcome! This library has **88 ready-to-use prompts + 3 templates**. Here's how 
 ### Step 2: Find Your Persona
 
 Jump to the section that matches you:
+- [Personal Growth & Wellbeing](#personal-growth--wellbeing)
 - [Software Engineer / Developer](#software-engineer--developer)
 - [Architect / Technical Lead](#architect--technical-lead)
 - [Product Manager / Business Analyst](#product-manager--business-analyst)
@@ -45,6 +46,38 @@ Jump to the section that matches you:
 ---
 
 ## 👥 Top Prompts by Persona
+
+### Personal Growth & Wellbeing
+
+**Your Top 3 Prompts**:
+
+1. **[@journal](personal/daily-reflection-guide.md)** - Daily Reflection Guide
+   - Transform brain dumps into structured journal entries
+   - Extract tasks, therapy notes, and growth moments
+   - Adaptive questioning based on emotional state
+   - Integrates with therapy work
+
+2. **[@therapy](personal/therapy-assistant.md)** - General Therapy Assistant
+   - Evidence-based therapeutic support (CBT, DBT, humanistic)
+   - Emotional processing and skill development
+   - Session documentation for continuity
+   - Professional referral guidance
+
+3. **[@neuro-therapist](personal/therapist.md)** - Neurodivergent-Specialized Therapist
+   - ADHD, autism, neurodivergent-affirming support
+   - Concrete interventions for executive functioning
+   - Masking trauma and identity work
+   - Self-advocacy skill development
+
+**Common Workflows**:
+- Daily Practice: Evening brain dump → @journal → Review action items
+- Therapy Prep: Review journal entries → @therapy (explore patterns) → Human therapy session
+- Pattern Tracking: Weekly journal review → @therapy (process patterns) → Create action plans
+- Neurodivergent Support: @neuro-therapist → @journal (document strategies) → Daily implementation
+
+**Pro Tip**: Use the [personal prompts folder](personal/README.md) as an integrated system—journaling feeds therapy work, therapy insights inform journaling, and both support personal growth over time.
+
+---
 
 ### Software Engineer / Developer
 

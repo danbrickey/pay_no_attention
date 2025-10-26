@@ -48,6 +48,7 @@ This taxonomy provides controlled vocabulary for classifying documentation. Use 
 - `process` - Business processes and workflows
 
 ### Personal Categories
+- `personal` - Personal development, mental health, and wellbeing
 - `personal-productivity` - Personal productivity tools and systems
 - `career` - Career development and planning
 - `learning` - Learning materials and educational content
