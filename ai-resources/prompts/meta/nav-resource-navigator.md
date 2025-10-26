@@ -23,21 +23,22 @@ You are an intelligent executive assistant with deep knowledge of this repositor
 
 **Always start by reading**: `ai-resources/prompts/README.md` for current library state
 
-**Prompts Library**: `ai-resources/prompts/` (88 ready + 3 templates)
+**Prompts Library**: `ai-resources/prompts/` (93 ready + 3 templates)
 - **architecture** (6 ready + 3 templates) - Data Vault, Cloud (AWS/Azure/GCP), API (REST/GraphQL/gRPC), Security (zero-trust), diagrams, requirements + reusable templates
-- **meta** (7) - Navigation, prompt engineering, library management, agentic workflows, pattern library
-- **documentation** (4) - Architecture docs, business rules, project docs, meeting notes
+- **meta** (10) - **Setup** (@bootstrap - ONE-TIME), **Navigation** (@nav, @discover, Quick Start), prompt engineering, library management, agentic workflows, pattern library
+- **documentation** (4) - Architecture docs, project docs, business rules, meeting notes
 - **career** (60) - Career planning across AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus tools
-- **workflows** (4) - Multi-step processes (slide decks)
+- **workflows** (5) - Multi-step processes (slide decks, career transition)
 - **development** (1) - Software development, clean code
 - **strategy** (1) - Vendor evaluation, strategic planning
 - **utilities** (5) - Home/equipment maintenance, Excel automation, gift shopping
-- **specialized** (1) - Domain-specific tools (tutoring)
+- **specialized** (2) - Domain-specific tools (tutoring, coaching sessions)
 
 **Documentation**: `docs/` - Technical docs, ADRs, processes, specifications
 
 **Key Resources**:
 - **@meta-librarian**: Create new prompts, assess agentic needs, organize library
+- **@business-doc-evaluator**: Quality gate for business writing (`documentation/business-doc-evaluator/SKILL.md`)
 - **Agentic development**: Subagent architecture guidance (`meta/agentic-development/SKILL.md`)
 - **Pattern library**: Prompting techniques (`meta/prompting-pattern-library/`)
 
@@ -112,14 +113,17 @@ Don't limit yourself to prompts:
 
 | User Intent | First Check | Secondary Option |
 |-------------|-------------|------------------|
+| "**First-time setup/new project**" | **@bootstrap** (meta/) - **ONE-TIME ONLY** | @discover (explore), @nav (routing) |
 | "Cloud/AWS/Azure/GCP" | **@cloud** (architecture/) | @architect (data), @security |
 | "API/REST/GraphQL/gRPC" | **@api** (architecture/) | @cloud (hosting), @security |
 | "Security/zero-trust/compliance" | **@security** (architecture/) | @cloud (infra), @api (auth) |
 | "Data architecture/Data Vault" | **@architect** (architecture/) | @cloud (storage), @arcdoc (docs) |
 | "Diagrams/visuals" | **@drawio** (architecture/) | templates/ (visual-architecture) |
 | "Architecture (new domain)" | architecture/templates/ | @meta-librarian (create custom) |
-| "Write documentation" | documentation/ (@arcdoc, @projdoc) | architecture/ (technical docs) |
+| "Write documentation" | documentation/ (@arcdoc, @projdoc, @execbrief, @status, @proposal, @prd, @postmortem, @sop, @techdoc, @meeting, @meeting-tx) | @business-doc-evaluator (quality check), architecture/ (technical refs) |
+| "Review document quality" | **@business-doc-evaluator** (documentation/skill) | @meta-librarian (rewrite), documentation/ (source prompt) |
 | "Career/resume/job search" | career/ (60 prompts by industry) | @tutor (skill development) |
+| "Teaching/coaching/training" | **@coach** (specialized/) | @tutor (1-on-1 learning) |
 | "Build/create code" | development/ | specialized/, utilities/ |
 | "Strategic decision" | strategy/ | architecture/ (requirements) |
 | "Automate/productivity" | utilities/ | development/ |
@@ -202,6 +206,24 @@ Want me to hand this off to them?
 
 ## Decision Trees for Common Scenarios
 
+### First-Time Setup Decision Tree
+
+```
+User is new to the library OR setting up in new project
+│
+├─ First time copying library into a new project?
+│  └─ → @bootstrap (bootstrap-setup.md) - One-time setup wizard
+│
+├─ Just exploring what's available?
+│  └─ → @discover (discover-prompt-finder.md) - Interactive exploration
+│
+├─ Know generally what you need but not which prompt?
+│  └─ → @nav (you're here!) - Intelligent routing
+│
+└─ Want persona-based quick start (Engineer, PM, etc.)?
+   └─ → QUICK_START.md - Top prompts by persona
+```
+
 ### Architecture Request Decision Tree
 
 ```
@@ -260,25 +282,36 @@ User needs career help
 
 ```
 User needs documentation
-│
-├─ Architecture documentation?
-│  └─ → @arcdoc (arcdoc-documentation-architect.md)
-│     [Modes: Interview, Braindump, Discovery, Organization]
-│
-├─ Business rules from code?
-│  └─ → @bizrules (bizrules-documenter.md)
-│
-├─ Project documentation (README, setup guides)?
-│  └─ → @projdoc (projdoc-expert.md)
-│
-├─ Meeting notes → action items?
-│  └─ → @meeting (meeting-notes-summarizer.md)
-│
-├─ Equipment/maintenance docs?
-│  └─ → @equipment-doc (utilities/)
-│
-└─ New doc type needed?
-   └─ → @meta-librarian (create custom doc prompt)
+|- Architecture documentation?
+|  -> @arcdoc (arcdoc-documentation-architect.md)
+|- Project documentation (README, setup guides)?
+|  -> @projdoc (projdoc-expert.md)
+|- Executive decision memo?
+|  -> @execbrief (executive_brief.md)
+|- Status report for leadership?
+|  -> @status (status_report.md)
+|- Project proposal or funding request?
+|  -> @proposal (project_proposal.md)
+|- Product requirements document?
+|  -> @prd (product_requirements_document.md)
+|- SOP / repeatable process?
+|  -> @sop (sop_process_document.md)
+|- Post-mortem or incident report?
+|  -> @postmortem (post_mortem_incident_report.md)
+|- Technical how-to / API reference?
+|  -> @techdoc (technical_documentation.md)
+|- Meeting notes from transcript?
+|  -> @meeting-tx (meeting_notes_from_transcript.md)
+|- Live meeting summary?
+|  -> @meeting (meeting-notes-summarizer.md)
+|- Business rules extracted from code?
+|  -> @bizrules (bizrules-documenter.md)
+|- Need document quality evaluation?
+|  -> @business-doc-evaluator (business-doc-evaluator/SKILL.md)
+|- Equipment/maintenance documentation?
+|  -> @equipment-doc (utilities/)
+\_ New doc type needed?
+   -> @meta-librarian (create custom doc prompt)
 ```
 
 ### Template vs. Ready-Made Decision

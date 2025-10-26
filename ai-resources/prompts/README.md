@@ -2,11 +2,11 @@
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "2.9.0"
+version: "3.2.0"
 category: "prompts-index"
-tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates", "cloud", "api", "security"]
+tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates", "cloud", "api", "security", "navigation", "discovery"]
 status: "current"
-contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "templates"]
+contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "templates", "navigation"]
 usage: "Centralized library of reusable prompt templates for consistent AI assistance across all domains"
 ---
 
@@ -14,13 +14,31 @@ usage: "Centralized library of reusable prompt templates for consistent AI assis
 
 Welcome to the AI Prompts Library - a comprehensive collection of reusable prompt templates for AI assistance across career development, technical work, documentation, and personal productivity.
 
+## 🚀 New to the Library? Start Here!
+
+**Choose your path**:
+
+1. **[@nav](meta/nav-resource-navigator.md) 🧭 Navigator** - Know what you need but not which prompt?
+   - Type: `@nav I need help with [your task]`
+   - Intelligent routing with decision trees
+
+2. **[@discover](meta/discover-prompt-finder.md) 🔍 Discovery Assistant** - Want to explore what's available?
+   - Type: `@discover` then answer questions
+   - Interactive prompt exploration
+
+3. **[Quick Start Guide](QUICK_START.md) 📖** - Find top prompts by persona
+   - Software Engineer, Architect, Product Manager, Career Changer, etc.
+   - Common workflows and use cases
+
 ## 🔍 Mnemonic Quick Reference
 
 Type `@` + mnemonic for fast autocomplete in Claude Code:
 
 | Mnemonic | Prompt | Purpose |
 |----------|--------|---------|
-| **@nav** 🧭 | [Navigator](meta/nav-resource-navigator.md) | **START HERE**: Route to right prompts/docs/workflows |
+| **@bootstrap** 🚀 | [Bootstrap Setup](meta/bootstrap-setup.md) | **ONE-TIME**: First-time library setup & customization |
+| **@nav** 🧭 | [Navigator](meta/nav-resource-navigator.md) | Intelligent routing to right prompts/docs/workflows |
+| **@discover** 🔍 | [Discovery Assistant](meta/discover-prompt-finder.md) | Interactive prompt exploration and finding |
 | **@meta-librarian** ⭐ | [Meta-Librarian Architect](meta/meta-librarian-architect.md) | **UNIFIED** (recommended): Create + assess + organize |
 | **@meta** | [Meta-Prompt Engineer](meta/meta-prompt-engineer.md) | Prompt engineering only (focused) |
 | **@librarian** | [Prompt Librarian](meta/librarian-prompt-management.md) | Library management only (focused) |
@@ -34,6 +52,7 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 | **@meeting** | [Meeting Notes](documentation/meeting-notes-summarizer.md) | Summarize meetings to action items |
 | **@drawio** | [Drawio Specialist](architecture/drawio-diagram-specialist.md) | Create/edit Draw.io diagrams |
 | **@tutor** | [AI Tutor](specialized/tutor-learning-assistant.md) | Personalized learning & skill development |
+| **@coach** | [Coaching Session Builder](specialized/coaching-session-builder.md) | Create structured coaching sessions (instructor guide + student manual + quick reference) |
 | **@equipment-doc** | [Equipment Maintenance Documenter](utilities/equipment-maintenance-documenter.md) | Create maintenance docs for equipment/tools/vehicles |
 | **@maintenance-planner** | [Household Maintenance Planner](utilities/household-maintenance-planner.md) | Master schedule with optimization & budgeting |
 | **@giftfinder** | [Gift Finder](utilities/giftfinder-shopping-assistant.md) | Gift shopping with recipient profiling & web search |
@@ -103,18 +122,23 @@ Prompts for generating and managing various types of documentation:
 
 Tools for creating and improving prompts themselves:
 
-> 💡 **New to meta prompts?** Start with `@meta-librarian` - it does everything.
-> Already have a prompt and just need to organize it? Use `@librarian` for simplicity.
-> Want to experiment with just prompt creation? Use `@meta` for focused workflow.
+> 💡 **New to the library?** Start with `@nav` or `@discover` for finding prompts, or use `@meta-librarian` to create new ones.
 
-### Navigation & Orchestration
-- **[@nav](meta/nav-resource-navigator.md)** 🧭 - **START HERE**: Intelligent routing assistant that knows the entire AI resources ecosystem. Directs you to the right prompts, docs, or workflows - and recommends creating new resources when gaps exist. **Use this when you're not sure which prompt to use.**
+### First-Time Setup
+- **[@bootstrap](meta/bootstrap-setup.md)** 🚀 - **One-Time Setup Assistant**: Guides you through initial library setup when copying into a new project. Customizes `.ai/instructions.md` through a structured interview, establishes documentation structure, and provides a personalized tour. **Use once when installing the library.**
 
-### Primary Tool (Recommended)
-- **[@meta-librarian](meta/meta-librarian-architect.md)** ⭐ - **UNIFIED SYSTEM**: Combines prompt engineering (systematic evaluation), agentic workflow assessment (when to use subagents), and library management (organization & discovery). **Most users want this.**
+### Navigation & Discovery (START HERE)
+- **[@nav](meta/nav-resource-navigator.md)** 🧭 - **Intelligent Router**: Knows the entire AI resources ecosystem. Directs you to the right prompts, docs, or workflows with decision trees and confidence-based routing. **Use when you know what you need but not which prompt.**
 
-### Standalone Components (Focused Tools)
-- **[@meta](meta/meta-prompt-engineer.md)** - Prompt engineering only: Creates high-quality prompts using systematic evaluation methodology with 3 candidates, rubric scoring, and evidence-based selection.
+- **[@discover](meta/discover-prompt-finder.md)** 🔍 - **Interactive Discovery**: Conversational prompt exploration through questions and guided navigation. **Use when browsing or exploring what's available.**
+
+- **[Quick Start Guide](QUICK_START.md)** 📖 - **Persona-Based Quick Start**: Top prompts by persona (Software Engineer, Architect, PM, Career Changer, etc.) with common workflows. **Use when first learning the library.**
+
+### Prompt Creation (Recommended)
+- **[@meta-librarian](meta/meta-librarian-architect.md)** ⭐ - **UNIFIED SYSTEM**: Combines prompt engineering (systematic evaluation with 3 candidates), agentic workflow assessment (when to use subagents), and library management (organization & discovery). **Most users want this.**
+
+### Focused Tools
+- **[@meta](meta/meta-prompt-engineer.md)** - Prompt engineering only: Creates high-quality prompts using systematic evaluation methodology with rubric scoring and evidence-based selection.
 - **[@librarian](meta/librarian-prompt-management.md)** - Library management only: Organizes, categorizes, discovers, and maintains the prompt library with metadata enhancement.
 
 ### Supporting Resources
@@ -270,6 +294,19 @@ Four-step workflow for creating enterprise slide decks:
 - [03_enterprise_deck_architect.md](workflows/slide_deck_workflow/03_enterprise_deck_architect.md) - Architect comprehensive slide deck structure
 - [04_deck_assemply_and_validation.md](workflows/slide_deck_workflow/04_deck_assemply_and_validation.md) - Assemble and validate final deck
 
+**Time**: 2-4 hours | **Deliverable**: Complete enterprise slide deck ready for presentation
+
+### Career Transition Workflow
+**Location**: [workflows/career-transition/](workflows/career-transition/)
+
+Four-step workflow for successful career transitions:
+- [01_career_analysis.md](workflows/career-transition/01_career_analysis.md) - Career path selection and analysis
+- [02_qualification_assessment.md](workflows/career-transition/02_qualification_assessment.md) - Detailed qualification assessment with personalized roadmap
+- [03_resume_development.md](workflows/career-transition/03_resume_development.md) - Resume and professional materials creation
+- [04_job_search_strategy.md](workflows/career-transition/04_job_search_strategy.md) - Strategic job search execution
+
+**Time**: 4-6 hours setup + ongoing execution | **Timeline**: 3-12 months to job offer
+
 ---
 
 ## 🎯 Specialized Prompts
@@ -279,6 +316,7 @@ Four-step workflow for creating enterprise slide decks:
 Domain-specific utility prompts:
 
 - **[@tutor](specialized/tutor-learning-assistant.md)** - AI tutor for personalized learning and skill development.
+- **[@coach](specialized/coaching-session-builder.md)** - Creates structured coaching sessions with instructor guide, student manual, and quick reference. Builds from fundamentals to advanced with Socratic questioning.
 
 ---
 
@@ -360,14 +398,14 @@ Or reference the full path:
 |----------|-------|----------|
 | Architecture | 6 ready + 3 templates | Data Vault, Cloud (AWS/Azure/GCP), API (REST/GraphQL/gRPC), Security (zero-trust), diagrams, requirements + reusable templates |
 | Documentation | 4 | Project docs, business rules, meeting notes |
-| Meta | 7 | Navigation/routing, prompt engineering, library management, patterns, agentic development, unified architect |
+| Meta | 10 | **Setup** (@bootstrap), **Navigation** (@nav, @discover, Quick Start), prompt engineering, library management, patterns, agentic development |
 | Career | 60 | Career planning across all industries: AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus analyzer & tools |
-| Workflows | 4 | Multi-step processes (slide decks) |
-| Specialized | 1 | Domain utilities (tutoring) |
+| Workflows | 5 | Multi-step processes (slide decks, career transition) |
+| Specialized | 2 | Domain utilities (tutoring, coaching sessions) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Utilities | 5 | Home/equipment maintenance, Excel automation, gift shopping, productivity tools |
-| **Total** | **88 ready + 3 templates** | Centralized general-purpose prompts + reusable architecture templates |
+| **Total** | **93 ready + 3 templates** | Centralized general-purpose prompts + reusable templates + navigation tools |
 
 ---
 
@@ -380,4 +418,4 @@ Or reference the full path:
 ---
 
 *Last Updated: 2025-10-25 by Dan Brickey*
-*Version v2.9.0: **Phase 4 Complete** - Created 3 production-ready architecture experts from templates: @cloud (AWS/Azure/GCP cloud architecture), @api (REST/GraphQL/gRPC API design), @security (zero-trust, threat modeling, compliance). These demonstrate the template system in action and provide immediate value for cloud, API, and security architecture guidance.*
+*Version v3.0.0: **Phase 5A Complete** - Enhanced Navigation & Discovery System. Created @discover (interactive prompt finder), Quick Start Guide (persona-based top picks), and upgraded @nav Navigator v2.0 with architecture expert routing and decision trees. Library now has comprehensive discovery tools to help users find the right prompt from 90+ options.*
