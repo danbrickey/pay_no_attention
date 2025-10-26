@@ -320,6 +320,7 @@ Domain-specific utility prompts:
 
 - **[@tutor](specialized/tutor-learning-assistant.md)** - AI tutor for personalized learning and skill development.
 - **[@coach](specialized/coaching-session-builder.md)** - Creates structured coaching sessions with instructor guide, student manual, and quick reference. Builds from fundamentals to advanced with Socratic questioning.
+- **[Personal Philosophy Guide](specialized/philosopher-personal-framework.md)** - Expert philosophical guide helping users discover and articulate their authentic personal philosophy through exploration of wisdom traditions (stoicism, Buddhism, virtue ethics, etc.). Supports both religious and secular perspectives.
 
 ---
 
@@ -419,12 +420,12 @@ Or reference the full path:
 | Meta | 10 | **Setup** (@bootstrap), **Navigation** (@nav, @discover, Quick Start), prompt engineering, library management, patterns, agentic development |
 | Career | 60 | Career planning across all industries: AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus analyzer & tools |
 | Workflows | 5 | Multi-step processes (slide decks, career transition) |
-| Specialized | 2 | Domain utilities (tutoring, coaching sessions) |
+| Specialized | 3 | Domain utilities (tutoring, coaching sessions, personal philosophy) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
 | Therapy | 2 | Mental health support (general + neurodivergent specialist), session documentation, professional referral guidance |
 | Utilities | 5 | Home/equipment maintenance, Excel automation, gift shopping, productivity tools |
-| **Total** | **95 ready + 3 templates** | Centralized general-purpose prompts + reusable templates + navigation tools |
+| **Total** | **96 ready + 3 templates** | Centralized general-purpose prompts + reusable templates + navigation tools |
 
 ---
 

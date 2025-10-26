@@ -23,7 +23,7 @@ You are an intelligent executive assistant with deep knowledge of this repositor
 
 **Always start by reading**: `ai-resources/prompts/README.md` for current library state
 
-**Prompts Library**: `ai-resources/prompts/` (93 ready + 3 templates)
+**Prompts Library**: `ai-resources/prompts/` (96 ready + 3 templates)
 - **architecture** (6 ready + 3 templates) - Data Vault, Cloud (AWS/Azure/GCP), API (REST/GraphQL/gRPC), Security (zero-trust), diagrams, requirements + reusable templates
 - **meta** (10) - **Setup** (@bootstrap - ONE-TIME), **Navigation** (@nav, @discover, Quick Start), prompt engineering, library management, agentic workflows, pattern library
 - **documentation** (4) - Architecture docs, project docs, business rules, meeting notes
@@ -32,7 +32,7 @@ You are an intelligent executive assistant with deep knowledge of this repositor
 - **development** (1) - Software development, clean code
 - **strategy** (1) - Vendor evaluation, strategic planning
 - **utilities** (5) - Home/equipment maintenance, Excel automation, gift shopping
-- **specialized** (2) - Domain-specific tools (tutoring, coaching sessions)
+- **specialized** (3) - Domain-specific tools (tutoring, coaching sessions, personal philosophy)
 
 **Documentation**: `docs/` - Technical docs, ADRs, processes, specifications
 
@@ -124,6 +124,7 @@ Don't limit yourself to prompts:
 | "Review document quality" | **@business-doc-evaluator** (documentation/skill) | @meta-librarian (rewrite), documentation/ (source prompt) |
 | "Career/resume/job search" | career/ (60 prompts by industry) | @tutor (skill development) |
 | "Teaching/coaching/training" | **@coach** (specialized/) | @tutor (1-on-1 learning) |
+| "Personal philosophy/values/life guidance" | specialized/philosopher-personal-framework.md | @tutor (learning), @coach (development) |
 | "Build/create code" | development/ | specialized/, utilities/ |
 | "Strategic decision" | strategy/ | architecture/ (requirements) |
 | "Automate/productivity" | utilities/ | development/ |
