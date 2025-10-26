@@ -1,12 +1,13 @@
 ---
 title: "Career Transition Workflow - Step 1: Career Analysis & Path Selection"
 author: "Dan Brickey"
-version: "1.0.0"
-last_updated: "2025-10-25"
+version: "1.1.0"
+last_updated: "2025-10-26"
 category: "workflow"
 tags: ["career-transition", "career-analysis", "multi-step-workflow", "step-1"]
 status: "active"
 workflow_position: "1/4"
+previous_step: "00_career_preferences.md"
 next_step: "02_qualification_assessment.md"
 estimated_time: "45-60 minutes"
 ---
@@ -14,12 +15,14 @@ estimated_time: "45-60 minutes"
 # Step 1: Career Analysis & Path Selection
 
 **Workflow**: Career Transition (Step 1 of 4)
-**Goal**: Understand your current position, identify target career paths, and select the best fit
+**Goal**: Understand your current position, identify target career paths, and select the best fit based on both skills AND preferences
 **Time**: 45-60 minutes
 
 ## Overview
 
-This is the foundation step where you explore career options and make an informed decision about your target role. You'll use the career analyzer to compare multiple paths and select the one that best aligns with your skills, interests, and goals.
+This is the foundation step where you explore career options and make an informed decision about your target role. You'll use the career analyzer to compare multiple paths and select the one that best aligns with your skills, interests, goals, AND preferences (if you completed Step 0).
+
+**Key Integration**: If you completed Step 0 (Career Preferences), this step will use your preference profile to filter and prioritize career paths that align with both your capabilities and what makes you thrive.
 
 ## Prerequisites
 
@@ -28,6 +31,7 @@ This is the foundation step where you explore career options and make an informe
 - Some idea of what interests you (even if vague)
 - Honest assessment of your strengths and weaknesses
 - Career goals and timeline (even if rough)
+- **[OPTIONAL]** Career preferences profile from Step 0
 
 **What you don't need**:
 - Certainty about your target role (we'll help you figure it out)
@@ -57,7 +61,7 @@ This is the foundation step where you explore career options and make an informe
 
 **Action**: Use [Career Analyzer](../../career/career-analyzer.md) to compare multiple career paths
 
-**Prompt to use**:
+**Prompt to use** (Standard):
 ```
 @career-analyzer
 
@@ -65,8 +69,28 @@ I'm currently [your current role] with [X years] experience.
 I'm interested in transitioning to [domain/area].
 I want to compare:
 - [Option 1]
+- [Option 2]  
+- [Option 3]
+```
+
+**Prompt to use** (With Preferences from Step 0):
+```
+@career-analyzer
+
+I'm currently [your current role] with [X years] experience.
+I'm interested in transitioning to [domain/area].
+
+I've completed a career preferences assessment with these key findings:
+- [Top 2-3 preference themes from Step 0]
+- [Important work environment needs]
+- [Key values/motivations]
+
+I want to compare these options with my preferences in mind:
+- [Option 1]
 - [Option 2]
 - [Option 3]
+
+Please factor in both my capability fit AND preference alignment.
 ```
 
 **Example**:

@@ -1,22 +1,23 @@
 ---
 title: "Career Transition Workflow"
 author: "Dan Brickey"
-version: "1.0.0"
-last_updated: "2025-10-25"
+version: "1.1.0"
+last_updated: "2025-10-26"
 category: "workflow"
 tags: ["career-transition", "multi-step-workflow", "career-change", "job-search"]
 status: "active"
-total_steps: 4
-estimated_total_time: "4-6 hours + ongoing execution"
+total_steps: 5
+estimated_total_time: "4.5-7 hours + ongoing execution"
 ---
 
 # Career Transition Workflow
 
-A comprehensive 4-step process for successfully transitioning to a new career, from exploration to job offer.
+A comprehensive 5-step process for successfully transitioning to a new career, from self-discovery to job offer.
 
 ## 🎯 What This Workflow Does
 
 This workflow guides you through a complete career transition, combining:
+- **Career preferences discovery** to understand what makes you thrive
 - **Career analysis** across 60+ career paths
 - **Qualification assessment** with personalized roadmap
 - **Professional materials** (resume, cover letter, portfolio)
@@ -38,6 +39,17 @@ This workflow guides you through a complete career transition, combining:
 
 ## 📋 Workflow Steps
 
+### [Step 0: Career Preferences & Values Discovery](00_career_preferences.md) **(OPTIONAL BUT RECOMMENDED)**
+**Goal**: Understand your work preferences, values, and what makes you thrive
+**Time**: 20-30 minutes  
+**Output**: Comprehensive preference profile to guide career path selection
+
+**What you'll do**:
+- Complete systematic preferences interview
+- Discover work environment and culture preferences
+- Identify values, motivations, and energy patterns
+- Create preference profile for career matching
+
 ### [Step 1: Career Analysis & Path Selection](01_career_analysis.md)
 **Goal**: Understand your options and select target career path
 **Time**: 45-60 minutes
@@ -45,7 +57,7 @@ This workflow guides you through a complete career transition, combining:
 
 **What you'll do**:
 - Explore 60+ career paths across industries
-- Compare 2-5 options systematically
+- Compare 2-5 options systematically (informed by preferences)
 - Select primary target (and optional backup)
 - Identify top 3 skill/experience gaps
 
@@ -93,18 +105,23 @@ This workflow guides you through a complete career transition, combining:
 
 **New to career transition?** Start here:
 
-1. **Begin with Step 1** ([Career Analysis](01_career_analysis.md))
+1. **Begin with Step 0** ([Career Preferences Discovery](00_career_preferences.md)) **(HIGHLY RECOMMENDED)**
+   - Complete preferences interview to understand what makes you thrive
+   - Skip only if you're very confident about your work preferences
+   - Takes 20-30 minutes but dramatically improves career matching
+
+2. **Continue with Step 1** ([Career Analysis](01_career_analysis.md))
    - Use [@discover](../../meta/discover-prompt-finder.md) or [Career folder](../../career/) to explore options
-   - Use [Career Analyzer](../../career/career-analyzer.md) to compare paths
+   - Use [Career Analyzer](../../career/career-analyzer.md) to compare paths (now informed by your preferences)
    - Select your target role
 
-2. **Proceed sequentially** through Steps 2 → 3 → 4
+3. **Proceed sequentially** through Steps 2 → 3 → 4
    - Each step builds on the previous
    - Don't skip steps (they're all important!)
    - Checkpoints ensure you're ready to proceed
 
 3. **Time investment**:
-   - **Upfront**: 4-6 hours across all 4 steps
+   - **Upfront**: 4.5-7 hours across all 5 steps (including optional Step 0)
    - **Ongoing**: 6-10 hours/week during active job search
    - **Timeline to offer**: 3-12 months depending on qualification tier
 
@@ -114,6 +131,15 @@ This workflow guides you through a complete career transition, combining:
 
 ```
 START
+  ↓
+┌─────────────────────────────────┐
+│ Step 0: Career Preferences      │
+│ • Work environment preferences  │
+│ • Values & motivation discovery │
+│ • Energy patterns & stressors   │
+│ • Create preference profile     │
+│ Time: 20-30 min (OPTIONAL)      │
+└─────────────────────────────────┘
   ↓
 ┌─────────────────────────────────┐
 │ Step 1: Career Analysis         │
