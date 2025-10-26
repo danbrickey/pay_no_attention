@@ -2,11 +2,11 @@
 title: "AI Prompts Library - Master Catalog"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "2.5.0"
+version: "2.8.0"
 category: "prompts-index"
-tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career"]
+tags: ["prompts", "AI-templates", "code-generation", "documentation", "architecture", "career", "templates"]
 status: "current"
-contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities"]
+contents: ["architecture", "documentation", "meta", "career", "workflows", "specialized", "development", "strategy", "utilities", "templates"]
 usage: "Centralized library of reusable prompt templates for consistent AI assistance across all domains"
 ---
 
@@ -31,6 +31,8 @@ Type `@` + mnemonic for fast autocomplete in Claude Code:
 | **@meeting** | [Meeting Notes](documentation/meeting-notes-summarizer.md) | Summarize meetings to action items |
 | **@drawio** | [Drawio Specialist](architecture/drawio-specialist.md) | Create/edit Draw.io diagrams |
 | **@tutor** | [AI Tutor](specialized/tutor-learning-assistant.md) | Personalized learning & skill development |
+| **@equipment-doc** | [Equipment Maintenance Documenter](utilities/equipment-maintenance-documenter.md) | Create maintenance docs for equipment/tools/vehicles |
+| **@maintenance-planner** | [Household Maintenance Planner](utilities/household-maintenance-planner.md) | Master schedule with optimization & budgeting |
 | **@giftfinder** | [Gift Finder](utilities/giftfinder-shopping-assistant.md) | Gift shopping with recipient profiling & web search |
 
 ---
@@ -58,9 +60,21 @@ ai-resources/prompts/
 
 Expert prompts for data architecture, technical design, and diagramming:
 
+### Ready-to-Use Architecture Experts
 - **[@architect](architecture/architect-data-vault.md)** - Data architecture expert for Data Vault 2.0, dimensional modeling, and Snowflake platform design.
-- **[@drawio](architecture/drawio-specialist.md)** - Specialist for creating and editing Draw.io diagrams for architecture documentation.
+- **[@drawio](architecture/drawio-diagram-specialist.md)** - Specialist for creating and editing Draw.io diagrams for architecture documentation.
 - **[technical-requirements/](architecture/technical-requirements/)** - Systematic approach to defining, documenting, and validating technical requirements for software projects.
+
+### Architecture Prompt Templates
+**Location**: [architecture/templates/](architecture/templates/)
+
+Reusable templates for creating domain-specific architecture prompts:
+
+- **[General Architecture Expert](architecture/templates/general-architecture-expert.md)** - Template for creating architecture experts in any domain (software, cloud, enterprise, security, etc.). Customize to create specialists for your specific architecture needs.
+- **[Technical Documentation Architect](architecture/templates/technical-documentation-architect.md)** - Template for creating documentation management systems for technical projects. Includes multi-audience layering, interview mode, braindump processing, and documentation discovery.
+- **[Visual Architecture Specialist](architecture/templates/visual-architecture-specialist.md)** - Template for creating diagram specialists for any tool (Draw.io, Mermaid, PlantUML, Excalidraw). Supports multi-tool diagram generation with domain customization.
+
+**What are templates?** These are generalized patterns extracted from successful specialized prompts. Use them to create new prompts for different domains, technologies, or projects. See [templates/README.md](architecture/templates/README.md) for detailed usage guidance.
 
 ---
 
@@ -108,16 +122,18 @@ Tools for creating and improving prompts themselves:
 
 **Location**: [career/](career/)
 
-Prompts for career planning, analysis, and development:
+Comprehensive career planning, analysis, and role-specific guidance across all industries:
 
 ### Career Planning & Analysis
-- **[career-analyzer.md](career/career-analyzer.md)** - Analyze career paths, create development plans, and identify skill gaps.
+- **[career-analyzer.md](career/career-analyzer.md)** - Multi-domain career path analyzer for technology, business, creative, healthcare, and finance roles. Analyze career fit, create development plans, and identify skill gaps.
 - **[career-cv-interviewer.md](career/career-cv-interviewer.md)** - Interview assistant for building comprehensive CV/resume content.
 
-### AI Career Path Role Prompts
+### Career Path Exploration by Industry
+
+#### AI & Machine Learning Careers
 **Location**: [career/ai_career_paths/](career/ai_career_paths/)
 
-Specialized role-specific prompts for exploring AI career paths:
+Specialized prompts for AI/ML career paths:
 
 #### Technical Roles
 - [ai_prompt_engineer.md](career/ai_career_paths/ai_prompt_engineer.md)
@@ -143,6 +159,93 @@ Specialized role-specific prompts for exploring AI career paths:
 - [ai_change_management_specialist.md](career/ai_career_paths/ai_change_management_specialist.md)
 - [conversational_ai_ux_designer.md](career/ai_career_paths/conversational_ai_ux_designer.md)
 - [data_annotator_ai_trainer.md](career/ai_career_paths/data_annotator_ai_trainer.md)
+
+#### Technology (Non-AI) Careers
+**Location**: [career/tech_career_paths/](career/tech_career_paths/)
+
+Traditional technology and software engineering roles:
+- [full_stack_engineer.md](career/tech_career_paths/full_stack_engineer.md) ✅ **Created**
+- DevOps Engineer / SRE (template ready)
+- Cloud Architect (template ready)
+- Cybersecurity Specialist (template ready)
+- Database Administrator (template ready)
+- QA/Test Automation Engineer (template ready)
+- Systems Administrator (template ready)
+- Network Engineer (template ready)
+
+#### Business & Management Careers
+**Location**: [career/business_career_paths/](career/business_career_paths/)
+
+Business strategy, analysis, and management roles:
+- [product_manager.md](career/business_career_paths/product_manager.md) ✅ **Created**
+- Project Manager (template ready)
+- Business Analyst (template ready)
+- Management Consultant (template ready)
+- Operations Manager (template ready)
+- Strategy Consultant (template ready)
+- Agile Coach/Scrum Master (template ready)
+
+#### Creative & Design Careers
+**Location**: [career/creative_career_paths/](career/creative_career_paths/)
+
+Design, content, and creative professional roles:
+- [ux_ui_designer.md](career/creative_career_paths/ux_ui_designer.md) ✅
+- [graphic_designer.md](career/creative_career_paths/graphic_designer.md) ✅
+- [content_writer.md](career/creative_career_paths/content_writer.md) ✅
+- [digital_marketing_specialist.md](career/creative_career_paths/digital_marketing_specialist.md) ✅
+- [video_producer.md](career/creative_career_paths/video_producer.md) ✅
+- [brand_strategist.md](career/creative_career_paths/brand_strategist.md) ✅
+- [event_planner.md](career/creative_career_paths/event_planner.md) ✅
+- [executive_assistant.md](career/creative_career_paths/executive_assistant.md) ✅
+- [digital_craft_business.md](career/creative_career_paths/digital_craft_business.md) ✅ (Etsy/maker with laser cutting, 3D printing, CNC)
+
+#### Healthcare (Non-Tech) Careers
+**Location**: [career/healthcare_career_paths/](career/healthcare_career_paths/)
+
+Healthcare professional and administrative roles:
+- [nurse_practitioner.md](career/healthcare_career_paths/nurse_practitioner.md) ✅
+- [healthcare_administrator.md](career/healthcare_career_paths/healthcare_administrator.md) ✅
+- [clinical_research_coordinator.md](career/healthcare_career_paths/clinical_research_coordinator.md) ✅
+- [medical_device_sales.md](career/healthcare_career_paths/medical_device_sales.md) ✅
+
+#### Finance & Sales Careers
+**Location**: [career/finance_sales_career_paths/](career/finance_sales_career_paths/)
+
+Finance, accounting, and sales professional roles:
+- [financial_analyst.md](career/finance_sales_career_paths/financial_analyst.md) ✅
+- [accountant_cpa.md](career/finance_sales_career_paths/accountant_cpa.md) ✅
+- [sales_engineer.md](career/finance_sales_career_paths/sales_engineer.md) ✅
+- [account_executive.md](career/finance_sales_career_paths/account_executive.md) ✅
+- [customer_success_manager.md](career/finance_sales_career_paths/customer_success_manager.md) ✅
+
+#### Vocational & Stepping-Stone Careers
+**Location**: [career/vocational_career_paths/](career/vocational_career_paths/)
+
+Entry-level careers that don't require 4-year degrees and serve as stepping stones to higher-level roles. These paths allow you to earn while you learn and gain practical experience:
+
+**Technology Entry Points:**
+- [help_desk_technician.md](career/vocational_career_paths/help_desk_technician.md) ✅ → IT Support → Systems Admin/Network Engineer
+- [web_developer_bootcamp.md](career/vocational_career_paths/web_developer_bootcamp.md) ✅ (Bootcamp/self-taught) → Full Stack Developer
+- [qa_tester.md](career/vocational_career_paths/qa_tester.md) ✅ (Manual testing) → QA Automation Engineer
+
+**Business Entry Points:**
+- [sales_development_rep.md](career/vocational_career_paths/sales_development_rep.md) ✅ (SDR) → Account Executive → Sales Manager
+- [customer_support_rep.md](career/vocational_career_paths/customer_support_rep.md) ✅ → Customer Success Manager → Account Manager
+
+**Healthcare Entry Points:**
+- [medical_assistant.md](career/vocational_career_paths/medical_assistant.md) ✅ (Certificate) → LPN → RN → Nurse Practitioner
+- [pharmacy_technician.md](career/vocational_career_paths/pharmacy_technician.md) ✅ (Certificate) → Pharmacy roles or healthcare admin
+
+**Skilled Trades:**
+- [electrician.md](career/vocational_career_paths/electrician.md) ✅ (Apprenticeship) → Journeyman → Master → Contractor
+- [hvac_technician.md](career/vocational_career_paths/hvac_technician.md) ✅ (Apprenticeship) → Master Tech → Business Owner
+- [automotive_technician.md](career/vocational_career_paths/automotive_technician.md) ✅ (Certificate/Trade School) → Master Tech → Shop Owner
+
+**Professional Services:**
+- [paralegal.md](career/vocational_career_paths/paralegal.md) ✅ (Certificate/Associate) → Senior Paralegal → Legal Operations
+
+### Job Search & Resume Resources
+**Location**: [career/job-search-strategist/](career/job-search-strategist/) & [career/resume-builder/](career/resume-builder/)
 
 ---
 
@@ -199,7 +302,14 @@ Strategic planning, evaluation, and decision-making prompts:
 
 Productivity tools and automation utilities:
 
+### Home & Equipment Maintenance
+- **[@equipment-doc](utilities/equipment-maintenance-documenter.md)** - Create comprehensive maintenance documentation for equipment, tools, appliances, vehicles, HVAC, and home systems. Works for renters and owners with climate-aware guidance.
+- **[@maintenance-planner](utilities/household-maintenance-planner.md)** - Synthesize individual equipment docs into optimized household maintenance master schedule with task grouping, budget planning, and calendar optimization.
+
+### Shopping & Gifts
 - **[@giftfinder](utilities/giftfinder-shopping-assistant.md)** - Intelligent gift discovery assistant with recipient profiling, web search, and organized tracking for thoughtful gift-giving.
+
+### Office Productivity
 - **[excel-automation/](utilities/excel-automation/)** - Automate Excel spreadsheet creation, data manipulation, and formula generation.
 - **[excel-editing/](utilities/excel-editing/)** - Expert assistance for editing existing Excel files, creating pivot tables, and advanced Excel features.
 
@@ -242,16 +352,16 @@ Or reference the full path:
 
 | Category | Count | Use Case |
 |----------|-------|----------|
-| Architecture | 3 | Technical design, Data Vault, diagrams, requirements |
+| Architecture | 3 ready + 3 templates | Technical design, Data Vault, diagrams, requirements + reusable templates |
 | Documentation | 4 | Project docs, business rules, meeting notes |
 | Meta | 7 | Navigation/routing, prompt engineering, library management, patterns, agentic development, unified architect |
-| Career | 20 | Career planning, AI roles, job search, resume building |
+| Career | 60 | Career planning across all industries: AI (16), Tech (8), Business (7), Creative (9), Healthcare (4), Finance/Sales (5), Vocational (11), plus analyzer & tools |
 | Workflows | 4 | Multi-step processes (slide decks) |
 | Specialized | 1 | Domain utilities (tutoring) |
 | Development | 1 | Coding assistance, clean code practices |
 | Strategy | 1 | Vendor evaluation, strategic planning |
-| Utilities | 3 | Excel automation, gift shopping, productivity tools |
-| **Total** | **44** | Centralized general-purpose prompts |
+| Utilities | 5 | Home/equipment maintenance, Excel automation, gift shopping, productivity tools |
+| **Total** | **85 ready + 3 templates** | Centralized general-purpose prompts + reusable architecture templates |
 
 ---
 
@@ -264,4 +374,4 @@ Or reference the full path:
 ---
 
 *Last Updated: 2025-10-25 by Dan Brickey*
-*Version v2.5.0: Added @nav Navigator for intelligent routing to prompts/docs/workflows - your entry point to the AI resources ecosystem*
+*Version v2.8.0: **Phase 3 Complete** - Added Architecture Prompt Templates system with 3 generalized templates (General Architecture Expert, Technical Documentation Architect, Visual Architecture Specialist). Templates extract common patterns from successful specialized prompts (@architect, @arcdoc, @drawio) and make them reusable for creating new prompts in different domains. Updated specialized prompts with template metadata to track lineage.*

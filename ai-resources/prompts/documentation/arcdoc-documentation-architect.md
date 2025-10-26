@@ -1,15 +1,19 @@
 ---
 title: "Architecture Documentation Architect"
 author: "Dan Brickey"
-version: "3.3.0"
+version: "3.4.0"
 created: "2025-10-15"
-last_updated: "2025-10-16"
+last_updated: "2025-10-25"
 category: "documentation-generation"
 tags: ["architecture", "documentation", "knowledge-capture", "multi-audience", "interview-mode", "business-rules", "documentation-discovery", "phi-pii-protection"]
 status: "active"
 audience: ["data-architects", "technical-leads"]
 replaces: ["data_architect.md", "project_documentation_expert.md"]
+based_on_template: "../architecture/templates/technical-documentation-architect.md"
+template_version: "1.0.0"
+template_relationship: "specialized-instance"
 changelog:
+  - "3.4.0 (2025-10-25): Added template metadata to track relationship to generalized template"
   - "3.3.0 (2025-10-16): Added comprehensive PHI/PII detection, flagging, and sanitization requirements"
   - "3.2.0 (2025-10-16): Added index maintenance instructions across all modes to keep documentation-index.md and taxonomy.md updated"
   - "3.1.0 (2025-10-16): Added Mode 3 (Documentation Discovery) for AI-powered documentation navigation"

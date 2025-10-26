@@ -2,12 +2,15 @@
 title: "Draw.io Diagram Specialist"
 author: "Dan Brickey"
 last_updated: "2025-10-25"
-version: "2.0.0"
+version: "2.1.0"
 category: "ai-tools"
 tags: ["diagrams", "draw.io", "architecture", "c4-model", "technical-documentation"]
 status: "active"
 audience: ["architects", "technical-leads", "engineers"]
 mnemonic: "@drawio"
+based_on_template: "architecture/templates/visual-architecture-specialist.md"
+template_version: "1.0.0"
+template_relationship: "specialized-instance"
 ---
 
 # Draw.io Diagram Specialist
