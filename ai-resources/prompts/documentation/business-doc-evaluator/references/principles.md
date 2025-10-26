@@ -6,7 +6,13 @@ Documents must have a clear purpose: what specific decision or action should the
 
 **Test:** Can you state in one sentence what this document is supposed to make someone do or understand differently?
 
-**Common failures:** Documents that explain things without orienting readers toward decisions or actions. Analysis without recommendations. Meeting notes without action items. Status reports without asks.
+**Common failures:**
+- Documents that explain things without orienting readers toward decisions or actions
+- Analysis without recommendations
+- Meeting notes without action items or decisions
+- Status reports that list activities but make no asks
+- **Specific anti-pattern**: "This document provides an overview of..." (overview for what purpose? what should reader do?)
+- **Specific anti-pattern**: Ending with "Let me know if you have questions" instead of "Please approve by Friday" or "Decision needed: A or B?"
 
 **Why this matters:** If Purpose is broken, nothing else matters. A well-structured document with no clear purpose is still useless. This is always the highest priority issue.
 
@@ -16,7 +22,12 @@ Real structure sequences information in the order the reader needs it to make a 
 
 **Test:** Does the structure force you to answer hard questions? If you can't fill a section, does it reveal what you don't know yet?
 
-**Common failures:** Generic five-section documents (Introduction, Background, Analysis, Recommendations, Conclusion) that look complete but say nothing. Structure as formatting rather than logic.
+**Common failures:**
+- Generic five-section documents (Introduction, Background, Analysis, Recommendations, Conclusion) that look complete but say nothing
+- Structure as formatting rather than logic
+- **Specific anti-pattern**: Executive brief that puts recommendation on page 3 instead of paragraph 1
+- **Specific anti-pattern**: Discussing solutions before stating the problem
+- **Specific anti-pattern**: Sections filled with content because template has sections, not because logic requires them
 
 ## Principle 3: Constraints - Constraints Do More Work Than Instructions
 
@@ -24,7 +35,13 @@ Every constraint ("don't include X", "maximum 500 words", "use only provided dat
 
 **Test:** Are there hard limits on length, scope, and content? Do these limits force hard choices about what matters most?
 
-**Common failures:** No length constraints (leads to padding). No scope boundaries (everything is included). No content constraints (AI fills gaps with plausible-sounding fiction).
+**Common failures:**
+- No length constraints (leads to padding and filler)
+- No scope boundaries (everything is included because nothing was excluded)
+- No content constraints (AI fills gaps with plausible-sounding fiction)
+- **Specific anti-pattern**: Executive brief that's 5 pages instead of 1 page (making it not actually a "brief")
+- **Specific anti-pattern**: Meeting notes that transcribe entire discussion instead of capturing decisions/actions only
+- **Specific anti-pattern**: Status report with 10 paragraphs of context when exec needs 3 bullet points
 
 **Why this matters:** AI's default mode is comprehensive helpfulness. Without constraints, every document expands to include everything, making nothing a priority.
 
@@ -50,7 +67,13 @@ AI will happily write comprehensive documents from incomplete information by fil
 
 **Test:** Do you have the actual information required for this document type? Not "I sort of know this" but specific data, decisions, and examples?
 
-**Common failures:** Prompting AI to write before gathering actual information. Accepting output that looks complete without verifying it's based on real data. Estimated numbers, inferred decisions, invented examples.
+**Common failures:**
+- Prompting AI to write before gathering actual information
+- Accepting output that looks complete without verifying it's based on real data
+- **Specific anti-pattern**: "Our solution improves efficiency by approximately 40%" (estimated number, not measured)
+- **Specific anti-pattern**: "The team decided to proceed with Option B" (inferred decision that wasn't actually made)
+- **Specific anti-pattern**: "Customer feedback has been positive" (invented claim with no actual customer quotes or survey data)
+- **Specific anti-pattern**: Using placeholder metrics that AI generated: "reduced processing time from 4.2 hours to 1.3 hours" (suspiciously precise numbers that weren't actually measured)
 
 **Why this matters:** If inputs are wrong, nothing downstream can fix it. A beautifully structured document built on assumptions is still fiction. This is the second-highest priority issue after Purpose.
 
@@ -60,7 +83,15 @@ AI has a default voice (diplomatically hedge-y, generically professional). Witho
 
 **Test:** Does this document sound like it came from your organization/person, or does it sound like generic AI?
 
-**Common failures:** Same cadence, transitions, and hedge language across all documents. Loss of personality and differentiation. Voice carries information about certainty—AI's default flattens this.
+**Common failures:**
+- Same cadence, transitions, and hedge language across all documents
+- Loss of personality and differentiation
+- Voice carries information about certainty—AI's default flattens this
+- **Specific anti-pattern**: Starting sentences with "It's worth noting that..." (generic AI hedge phrase)
+- **Specific anti-pattern**: Overuse of "Additionally," "Moreover," "Furthermore" as transition words
+- **Specific anti-pattern**: "This allows for greater flexibility" instead of direct "This lets you X"
+- **Specific anti-pattern**: Passive voice hiding responsibility: "It was decided" instead of "Sarah decided"
+- **Specific anti-pattern**: Diplomatic hedging that removes useful certainty: "It may be beneficial to consider" instead of "We should" or "We might"
 
 **Note:** This principle is more subjective than others. When evaluating, focus on whether generic AI phrases appear ("It's worth noting", "Additionally", "Moreover") rather than judging voice authenticity.
 
@@ -117,22 +148,37 @@ Within the same tier, prioritize fixes that:
 ## Document-Specific Failure Modes
 
 ### Meeting Notes
-- No decisions documented
+- No decisions documented (discussion transcribed but no "We decided X" statements)
 - Action items without owners or deadlines
-- No clear next steps
-- Missing date/attendees
+  - ❌ "Team to follow up on proposal"
+  - ✅ "[Sarah] [Oct 15] Send pricing proposal to Acme Corp"
+- Action items where owner is listed as "team" or "we" instead of specific person
+- No clear next steps or what happens if deadlines are missed
+- Missing date/attendees (can't tell who made decisions or when)
+- Open questions buried in discussion instead of explicitly tracked with owner assigned to resolve
 
 ### Status Reports
-- No actual status stated (just narrative)
+- No actual status stated (just narrative of activities without "on track" / "at risk" / "blocked")
 - Vague progress claims
-- Hidden blockers
-- No clear asks for help
+  - ❌ "Making good progress on the API integration"
+  - ✅ "API integration: 60% complete (3 of 5 endpoints done), on track for Oct 15 launch"
+- Hidden blockers buried in paragraphs instead of called out explicitly
+- No clear asks for help or escalation
+- Metrics without context: "40% improvement" (from what baseline? measured how?)
+- Lists what was done without stating whether goals were met
 
 ### Executive Briefs
-- No decision request
+- No decision request in first paragraph (exec has to read to page 3 to learn what you're asking for)
 - Recommendation buried or absent
+  - ❌ Discusses options A, B, C without stating which one to choose
+  - ✅ "Recommendation: Choose Option B. Decision needed by Oct 15."
 - Vague options without trade-offs
-- Unsourced claims
+  - ❌ "Option A: Improve performance. Option B: Reduce costs."
+  - ✅ "Option A: 20% faster ($50K cost, 3 month timeline). Option B: 30% cheaper (but 10% slower, 1 month timeline)."
+- Unsourced claims and estimated numbers presented as facts
+  - ❌ "This will generate approximately $2M in revenue"
+  - ✅ "Projected $1.8-2.2M revenue (based on Acme deal at $75K ACV × 25 similar prospects in pipeline)"
+- No risk section or only discusses upsides
 
 ### Project Proposals
 - Vague problem statement
@@ -149,11 +195,17 @@ Within the same tier, prioritize fixes that:
 - Undocumented open questions
 
 ### Technical Documentation
-- Missing prerequisites
-- Happy path only (no error handling)
-- Incomplete code examples
-- No troubleshooting
-- Assumed knowledge
+- Missing prerequisites (developer discovers required tools through error messages)
+  - ❌ Says "install the dependencies" without listing what they are
+  - ✅ "Prerequisites: Node 18+, PostgreSQL 14+, Redis 6+"
+- Happy path only (no error handling or edge cases documented)
+- Incomplete code examples (pseudocode that can't actually run, or missing imports/error handling)
+- No troubleshooting section for common errors
+  - ❌ No guidance when developer gets "ECONNREFUSED"
+  - ✅ "Error ECONNREFUSED: Database isn't running. Start with: docker-compose up db"
+- Assumed knowledge not stated upfront ("assumes familiarity with REST APIs")
+- Examples don't show expected output (developer doesn't know if they succeeded)
+- No guidance on production vs. development setup differences
 
 ### Post-Mortems
 - Blame individuals instead of systems

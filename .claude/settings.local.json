@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(tree:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(python3:*)",
+      "Bash(wsl grep -oE '\"\"\"\"(specificity|proof_density|positioning_clarity|differentiation|call_to_action|platform_fit|engagement_potential|cta_strength|message_clarity|objection_handling|subject_line_specificity|personalization_signals|value_proposition_clarity|social_proof|friction_reduction|benefit_clarity|urgency_creation|discovery_optimization|scanability|purchase_confidence|empathy|solution_completeness|context_awareness|proactive_guidance|problem_comprehension|clarity_and_precision|action_item_clarity|participant_attribution|outcome_tracking|distribution_method|hook_strength|pacing|visual_direction|audio_cues|value_communication|trust_building|seo_effectiveness|content_depth|findability|navigability|shareability|purpose_clarity|tone_alignment|information_architecture|completeness|technical_precision|accessibility|usability|strategic_alignment|actionability|executive_appropriate|data_quality|stakeholder_relevance|professionalism|accuracy|timeliness|presentation_quality|client_focus)\"\"\"\":\\s*[0-9]' \"/mnt/c/Users/danbr/github-danbrickey/pay_no_attention/ai-resources/prompts/documentation/evaluation/Prompts to Fix Slop.html\")",
+      "Bash(mkdir:*)",
+      "Bash(python extract_blog_evaluator.py:*)",
+      "Bash(del extract_blog_evaluator.py blog_post_evaluator_extracted.txt)",
+      "Bash(python:*)",
+      "Read(//c/Users/danbr/**)",
+      "Bash(for:*)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(head:*)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
